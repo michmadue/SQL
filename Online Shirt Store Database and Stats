@@ -1,0 +1,35 @@
+--Create an online shirt store database
+
+CREATE TABLE shirts (id INTEGER PRIMARY KEY, genre TEXT, price INTEGER, popularity INTEGER);
+
+INSERT INTO shirts VALUES (1, 'kids', 10.99, 3);
+INSERT INTO shirts VALUES (3, 'pets', 5.99, 2);
+INSERT INTO shirts VALUES (4, 'adults', 19.99, 2);
+INSERT INTO shirts VALUES (5, 'cars', 15.99, 2);
+INSERT INTO shirts VALUES (6, 'plain', 12.99, 2);
+INSERT INTO shirts VALUES (7, 'inspirational', 18.99, 2);
+INSERT INTO shirts VALUES (8, 'disney', 29.99, 3);
+INSERT INTO shirts VALUES (9, 'fruit', 10.99, 3);
+INSERT INTO shirts VALUES (10, 'funny', 15.99, 1);
+INSERT INTO shirts VALUES (11, 'custom', 25.99, 1);
+INSERT INTO shirts VALUES (12, 'sports', 25.99, 3);
+INSERT INTO shirts VALUES (13, 'music', 19.99, 3);
+INSERT INTO shirts VALUES (14, 'tv shows', 10.99, 1);
+INSERT INTO shirts VALUES (15, 'movies', 15.99, 3);
+
+--display the database ordered by popularity. 
+SELECT * FROM shirts ORDER BY popularity;
+
+--what are the most 5 popular genres? 
+SELECT shirt, price, popularity
+FROM sshirts
+order by popularity desc
+limit 5;
+
+
+ 
+
+
+
+
+
